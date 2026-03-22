@@ -1,0 +1,46 @@
+<ul>
+  <li *ngIf="isAdmin()">
+    <a routerLink="/post">Post</a>
+  </li>
+
+  <li *ngIf="isAdmin()">
+    <a routerLink="/post-edit">Post Edit</a>
+  </li>
+  <li>
+    <a routerLink="/postlist">Feed</a>
+  </li>
+  <li style="float: right">
+    <a (click)="logout()">Logout</a>
+  </li>
+</ul>
+<div class="main-layout">
+  <!-- LEFT: FEED -->
+  <div class="feed-section">
+    <h2>Feed</h2>
+    <p>Your posts will come here...</p>
+  </div>
+  <div class="layout">
+    <!-- Navbar -->
+
+    <!-- Page content -->
+
+    <!-- RIGHT SIDE (QUOTES) -->
+    <div class="quote-section">
+      <h3 class="quote">
+        “Photography has no rules,it is not a sport.<br />
+        It is the result which counts,<br />
+        no matter how it is achieved.”
+      </h3>
+      <br />
+      <h3 class="quote">“A photograph is like a recipe - memory the finished dish.”</h3>
+      <br />
+      <h3 class="quote">“Don’t pack up your camera until you’ve left the location.”</h3>
+      <br />
+      <h3 class="quote">
+        “Photography is about finding out what can happen in the frame.<br />
+        When you put four edges around some facts,<br />
+        you change those facts.”
+      </h3>
+    </div>
+  </div>
+</div>

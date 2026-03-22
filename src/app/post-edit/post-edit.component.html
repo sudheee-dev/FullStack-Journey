@@ -1,0 +1,20 @@
+<ul>
+  <li *ngIf="isAdmin()">
+    <a routerLink="/post">Post</a>
+  </li>
+  <li>
+    <a routerLink="/postlist">Feed</a>
+  </li>
+</ul>
+<div class="layout">
+  <!-- Navbar -->
+  <div class="navbar">
+    <span>Feed</span>
+    <span>post-edit</span>
+  </div>
+
+  <!-- Page content -->
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
+</div>
